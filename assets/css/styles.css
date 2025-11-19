@@ -89,3 +89,44 @@ main {
 footer {
     background-color: orange;
 }
+
+@media (min-width: 768px) {
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: auto;
+        padding-right: 1rem;
+        top: auto;
+    }
+
+    #menu {
+        display: flex;
+        align-items: center;
+    }
+
+    #menu > li {
+        margin-bottom: 0;
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    h1 {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    main {
+        margin-top: 79px;
+    }
+}
+
+@media (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+}
