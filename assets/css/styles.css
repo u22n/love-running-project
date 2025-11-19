@@ -23,6 +23,37 @@ header {
     box-shadow: 0 2px 2px #3a3a3a;
 }
 
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    padding: 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#nav-toggle:checked ~ nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
 header a {
     text-decoration: none;
     color: inherit;
@@ -52,6 +83,7 @@ h1 {
 main {
     background-color: lightblue;
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 footer {
