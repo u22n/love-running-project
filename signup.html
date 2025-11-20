@@ -36,16 +36,22 @@
             <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
                 <h2><i class="fa-solid fa-heartbeat" aria-hidden="true"></i> Let's get you signed up!</h2>
 
-                <label for="first-name">First Name</label>
-                <input type="text" name="first_name" id="first-name" class="text-input" required>
-                <br>
-
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last_name" id="last-name" class="text-input" required>
-                <br>
+                <div class="name-row">
+                    <div class="name-field">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first_name" id="first-name" class="text-input" required placeholder="Jane" aria-describedby="first-help">
+                        <small id="first-help" class="helper">As shown on your ID</small>
+                    </div>
+                    <div class="name-field">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last_name" id="last-name" class="text-input" required placeholder="Doe" aria-describedby="last-help">
+                        <small id="last-help" class="helper">Family name</small>
+                    </div>
+                </div>
 
                 <label for="email-address">Email Address</label>
-                <input type="email" name="email_address" id="email-address" class="text-input" required>
+                <input type="email" name="email_address" id="email-address" class="text-input" required placeholder="name@example.com" aria-describedby="email-help">
+                <small id="email-help" class="helper">We will only send running updates</small>
                 <br>
 
                 <div class="radio-buttons">
@@ -61,6 +67,10 @@
                         <label for="both">Both</label>
                         <input type="radio" name="running_preference" id="both" value="both" required>
                     </div>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Send me occasional updates about events</label>
                 </div>
 
                 <button type="submit" class="join-button">Let's Run!</button>

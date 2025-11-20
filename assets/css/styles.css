@@ -91,8 +91,6 @@ main {
     display: flex;
     flex-direction: column;
 }
-
-/* Sign up page styles */
 #signup {
     background-image: url("../images/signup-image.webp");
     background-size: cover;
@@ -121,6 +119,13 @@ main {
     border: 1px solid #fafafa;
     border-radius: 2px;
     padding: 0 8px;
+    transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.text-input:focus {
+    outline: none;
+    border-color: #f16c6b;
+    box-shadow: 0 0 0 3px rgba(241,108,107,0.12);
 }
 
 .radio-buttons {
@@ -144,10 +149,17 @@ main {
     border-radius: 2px;
     padding: 15px 32px;
     font-size: 100%;
-    background-color: #454b1b;
+    background-image: linear-gradient(90deg,#4b5320,#6b7a2a 60%);
     color: #fafafa;
     border: none;
     cursor: pointer;
+    transition: transform 120ms ease, box-shadow 120ms ease, background-color 150ms ease, color 150ms ease;
+}
+
+.join-button:focus {
+    outline: none;
+    box-shadow: 0 6px 18px rgba(75,83,32,0.25);
+    transform: translateY(-1px);
 }
 
 @media (min-width: 768px) {
@@ -170,9 +182,42 @@ main {
     .join-button:hover {
         background-color: #fafafa;
         color: #454b1b;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     }
 }
 
+/* name row responsive layout */
+.name-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.name-field .helper,
+.helper {
+    display: block;
+    color: rgba(250,250,250,0.8);
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+    .name-row {
+        flex-direction: row;
+    }
+
+    .name-field {
+        flex: 1 1 0;
+    }
+}
+
+.checkbox {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 #hero {
     height: 600px;
     width: 100%;
