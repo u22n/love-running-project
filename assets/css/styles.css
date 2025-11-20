@@ -13,7 +13,6 @@ body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
-/* Headings used across the site */
 h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -93,7 +92,6 @@ main {
     background: lightgreen url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
-/* Cover text overlay on the hero image */
 #cover-text {
     position: absolute;
     bottom: 30px;
@@ -106,14 +104,12 @@ main {
     font-size: 130%;
 }
 
-/* white text for headings inside the cover */
 #cover-text > h2,
 #cover-text > h3 {
     color: #ffffff;
     margin: 0 0 0.5rem 0;
 }
 
-/* footer rule intentionally left out; footer uses #social-networks styles */
 
 #social-networks {
     text-align: center;
@@ -154,8 +150,6 @@ main {
     main {
         margin-top: 79px;
     }
-
-    /* adjust cover text on larger screens */
     #cover-text {
         width: 300px;
         right: 50px;
@@ -166,6 +160,48 @@ main {
 @media (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+}
+
+/* Reasons / benefits section */
+#reasons {
+    padding: 1.5rem 1rem 2rem;
+}
+
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 180%;
+}
+
+#benefits > div > div {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+#benefits hr {
+    border: 0;
+    border-top: 1px solid currentColor;
+    margin: 5px 0;
+}
+
+#benefits h3 i {
+    margin-right: 8px;
+}
+
+@media (min-width: 768px) {
+    #benefits {
+        display: flex;
+        gap: 2rem;
+    }
+
+    #benefits-physical,
+    #benefits-mental {
+        flex: 1 1 0;
     }
 }
     align-items: center;
