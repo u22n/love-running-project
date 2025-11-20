@@ -81,9 +81,15 @@ h1 {
 }
 
 main {
-    background-color: lightblue;
     flex: 1 0 auto;
     margin-top: 47px;
+}
+
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: lightgreen url("../images/hero.jpg") no-repeat center center/cover;
 }
 
 footer {
