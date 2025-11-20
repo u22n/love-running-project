@@ -21,6 +21,11 @@ h1, h2, h3 {
 
 }
 
+/* utility to hide content visually but keep for SEO */
+.hide {
+    display: none;
+}
+
 header {
     background-color: #ffffff;
     padding: 0 1rem;
@@ -271,4 +276,36 @@ main {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+/* Meet-up times section */
+#meetups {
+    padding: 1.5rem 0 3rem;
+}
+
+#times {
+    background: lightgray url("../images/meetups-image.webp") no-repeat center center/cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+#times > div {
+    color: #fafafa;
+    background: rgba(0,0,0,0.6);
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.2);
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+#times h3 {
+    color: #fafafa;
+}
+
+#times p {
+    margin: 0.25rem 0;
 }
