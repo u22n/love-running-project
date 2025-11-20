@@ -278,13 +278,12 @@ main {
     color: #3a3a3a;
 }
 
-/* Meet-up times section */
 #meetups {
     padding: 1.5rem 0 3rem;
 }
 
 #times {
-    background: lightgray url("../images/meetups-image.webp") no-repeat center center/cover;
+    background: lightgray url("../images/dublin-city.webp") no-repeat center center/cover;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
