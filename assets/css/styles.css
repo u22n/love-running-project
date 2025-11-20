@@ -308,3 +308,37 @@ main {
 #times p {
     margin: 0.25rem 0;
 }
+
+/* Gallery styles */
+#gallery {
+    padding: 1.5rem 0 2rem;
+}
+
+#photos {
+    line-height: 0;
+}
+
+#photos img {
+    width: 100%;
+    display: block;
+    line-height: 1em;
+}
+
+@media (min-width: 480px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    #photos {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 992px) {
+    #photos {
+        column-count: 4;
+    }
+}
