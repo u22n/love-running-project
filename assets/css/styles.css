@@ -298,6 +298,40 @@ main {
     }
 }
 
+/* Form error and success styles */
+.input-error {
+    border-color: #ff6b6b !important;
+    box-shadow: 0 0 0 3px rgba(255,107,107,0.12);
+}
+.error-message {
+    color: #ffd6d6;
+    background: rgba(255,107,107,0.12);
+    padding: 6px 8px;
+    margin-top: 6px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* Center the success message in the middle of the viewport */
+.signup-success {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    background: rgba(18, 28, 45, 0.96);
+    color: #e6f7ff; /* slightly different, cool tint */
+    padding: 28px 30px;
+    border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.45);
+    max-width: 92%;
+    width: 420px;
+    text-align: center;
+}
+.signup-success h2 { color: #ffd166; margin-bottom: 8px; }
+.signup-success p { color: #dff6ff; margin: 6px 0; }
+
+
 #reasons {
     padding: 1.5rem 1rem 2rem;
 }
