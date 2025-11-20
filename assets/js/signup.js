@@ -18,7 +18,6 @@ export function setupForm() {
     }
 
     function validateEmail(email) {
-        // Basic RFC-like check — fast client-side sanity
         return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email);
     }
 
@@ -102,7 +101,6 @@ export function setupForm() {
     });
 }
 
-// If the script is included directly (not imported as module), initialize on DOMContentLoaded
 if (typeof window !== 'undefined' && !window.__signup_module_attached) {
     document.addEventListener('DOMContentLoaded', function () { if (window.setupForm) { setupForm(); } else { /* nothing */ } });
     window.__signup_module_attached = true;
