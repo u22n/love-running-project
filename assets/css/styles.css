@@ -163,7 +163,6 @@ main {
     }
 }
 
-/* Reasons / benefits section */
 #reasons {
     padding: 1.5rem 1rem 2rem;
 }
@@ -202,6 +201,68 @@ main {
     #benefits-physical,
     #benefits-mental {
         flex: 1 1 0;
+    }
+}
+
+/* benefits image styles */
+#benefits-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+#circle-cover-bg {
+    width: 200px;
+    height: 200px;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    background: lightgray url("../images/benefits-image.jpg") no-repeat center center/cover;
+}
+
+@media (min-width: 768px) {
+    #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical > div,
+    #benefits-mental > div {
+        width: 75%;
+    }
+
+    #benefits-mental {
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    #benefits-mental > div {
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #benefits {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #benefits-physical { order: 1; }
+    #benefits-image { order: 2; }
+    #benefits-mental { order: 3; }
+
+    #benefits-physical,
+    #benefits-mental {
+        flex: 1 1 0;
+    }
+
+    #circle-cover-bg {
+        width: 300px;
+        height: 300px;
     }
 }
     align-items: center;
