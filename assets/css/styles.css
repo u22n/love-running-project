@@ -13,6 +13,14 @@ body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
+/* Headings used across the site */
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+
+}
 
 header {
     background-color: #ffffff;
@@ -59,13 +67,6 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
-
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -88,18 +89,85 @@ main {
 #hero {
     height: 600px;
     width: 100%;
+    position: relative;
     background: lightgreen url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
-footer {
+/* Cover text overlay on the hero image */
+#cover-text {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    background: rgba(255, 0, 102, 0.6);
+    font-size: 130%;
 }
+
+/* white text for headings inside the cover */
+#cover-text > h2,
+#cover-text > h3 {
+    color: #ffffff;
+    margin: 0 0 0.5rem 0;
+}
+
+/* footer rule intentionally left out; footer uses #social-networks styles */
 
 #social-networks {
     text-align: center;
     padding: 1rem 0;
     display: flex;
     justify-content: space-evenly;
-    list-style-type: none;
+
+@media (min-width: 768px) {
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: auto;
+        padding-right: 1rem;
+        top: auto;
+    }
+
+    #menu {
+        display: flex;
+        align-items: center;
+    }
+
+    #menu > li {
+        margin-bottom: 0;
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    h1 {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    main {
+        margin-top: 79px;
+    }
+
+    /* adjust cover text on larger screens */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+        left: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+}
     align-items: center;
 }
 
