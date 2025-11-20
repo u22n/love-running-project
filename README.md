@@ -2,7 +2,7 @@
 	<h1>🏃‍♀️ Love Running</h1>
 	<p><strong>A friendly, heart‑powered running club website for Dublin — my first project on this coding journey.</strong></p>
 	<a href="https://ui.dev/amiresponsive?url=https://u22n.github.io/love-running-project/" target="_blank" rel="noopener">
-		<img src="docs/imgage.png" alt="Responsive preview of Love Running website across devices - click to open live demo" width="750" />
+		<img src="docs/image.png" alt="Responsive preview of Love Running website across devices - click to open live demo" width="750" />
 	</a>
 	<br>
 	<em>Built with curiosity, caffeine, and a lot of iteration.</em>
