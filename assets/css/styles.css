@@ -331,6 +331,27 @@ main {
 .signup-success h2 { color: #ffd166; margin-bottom: 8px; }
 .signup-success p { color: #dff6ff; margin: 6px 0; }
 
+/* entrance animation for success box */
+@keyframes signup-entrance {
+    from { transform: translate(-50%, -60%) scale(0.96); opacity: 0; }
+    to   { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+.signup-success {
+    animation: signup-entrance 360ms cubic-bezier(.2,.8,.2,1) both;
+}
+
+.signup-success .home-button,
+.signup-success .home-button:active {
+    background: linear-gradient(90deg,#ffd166,#ffb86b);
+    color: #0b1220;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.signup-success .home-button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.18); }
+
 
 #reasons {
     padding: 1.5rem 1rem 2rem;
