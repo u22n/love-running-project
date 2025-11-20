@@ -85,11 +85,10 @@ main {
     margin-top: 47px;
 }
 
-/* Hero section */
 #hero {
     height: 600px;
     width: 100%;
-    background: lightgreen url("../images/hero.jpg") no-repeat center center/cover;
+    background: lightgreen url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
 footer {
